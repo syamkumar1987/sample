@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="sampleprojectforgitFlow" doc:id="a8b788d5-8e95-4732-97bc-6c2950b586ee" >
 		<http:listener doc:name="Listener" doc:id="3708da80-3681-4270-a81e-53b0636ba528" config-ref="HTTP_Listener_config" path="/practice1"/>
-		<logger level="INFO" doc:name="Logger" doc:id="e65f0041-108f-498f-b66d-9cb6ce3d3e63" message="flow started..."/>
+		<logger level="INFO" doc:name="Logger" doc:id="e65f0041-108f-498f-b66d-9cb6ce3d3e63" message="strarting logger"/>
 		<ee:transform doc:name="Transform Message" doc:id="f6adf8d4-8f7e-459c-ad9a-86b54a86b99c" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
